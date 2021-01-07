@@ -245,6 +245,12 @@ table {
 	left: 5px;
 	transform: rotate(45deg);
 }
+.third-div{
+	margin-top: 20px;
+}
 
+.third-div .text{
+	font-size: 30px;
+}
 
 
