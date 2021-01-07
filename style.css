@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 
-html{
+html {
 	height: 100%;
 }
 
@@ -102,12 +102,14 @@ h1 span {
 	grid-template-columns: repeat(7, 1fr);
 	height: 200px;
 }
-.date-picker .dates .days .day { 
+
+.date-picker .dates .days .day {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: #313131;
 }
+
 .date-picker .dates .days .day.selected {
 	background-color: #00CA85;
 }
@@ -115,30 +117,49 @@ h1 span {
 /* dropdown select */
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
 
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after, q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
 /* box model */
-.second-div{
+.second-div {
 	width: 100%;
 	text-align: center;
 	margin-top: 20px;
@@ -148,6 +169,7 @@ table {
 	width: 320px;
 	display: inline-block;
 }
+
 .custom-select {
 	position: relative;
 	display: flex;
@@ -156,6 +178,7 @@ table {
 	border-style: solid;
 	border-color: #394a6d;
 }
+
 .custom-select__trigger {
 	position: relative;
 	display: flex;
@@ -173,6 +196,7 @@ table {
 	border-style: solid;
 	border-color: #394a6d;
 }
+
 .custom-options {
 	position: absolute;
 	display: block;
@@ -188,11 +212,13 @@ table {
 	pointer-events: none;
 	z-index: 2;
 }
+
 .custom-select.open .custom-options {
 	opacity: 1;
 	visibility: visible;
 	pointer-events: all;
 }
+
 .custom-option {
 	position: relative;
 	display: block;
@@ -204,10 +230,12 @@ table {
 	cursor: pointer;
 	transition: all 0.5s;
 }
+
 .custom-option:hover {
 	cursor: pointer;
 	background-color: #b2b2b2;
 }
+
 .custom-option.selected {
 	color: #ffffff;
 	background-color: #305c91;
@@ -219,7 +247,9 @@ table {
 	height: 15px;
 	width: 15px;
 }
-.arrow::before, .arrow::after {
+
+.arrow::before,
+.arrow::after {
 	content: "";
 	position: absolute;
 	bottom: 0px;
@@ -227,30 +257,50 @@ table {
 	height: 100%;
 	transition: all 0.5s;
 }
+
 .arrow::before {
 	left: -5px;
 	transform: rotate(45deg);
 	background-color: #394a6d;
 }
+
 .arrow::after {
 	left: 5px;
 	transform: rotate(-45deg);
 	background-color: #394a6d;
 }
+
 .open .arrow::before {
 	left: -5px;
 	transform: rotate(-45deg);
 }
+
 .open .arrow::after {
 	left: 5px;
 	transform: rotate(45deg);
 }
-.third-div{
-	margin-top: 20px;
+
+.third-div {
+	margin-top: 150px;
 }
 
-.third-div .text{
+.third-div .text {
 	font-size: 30px;
+	font-weight: 600;
+	color: red;
 }
 
+.third-div .divider {
+	color: red;
+	margin-bottom: 15px;
+}
 
+.lunar-div .lunar-text{
+	font-size: 25px;
+	display: inline-block;
+	padding-top: 10px;
+}
+
+.lunar-div .lunar-text .lunar-cal{
+	font-weight: 600;
+}
